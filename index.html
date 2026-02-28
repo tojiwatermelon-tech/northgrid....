@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NorthGrid - For Batman</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Landing Screen -->
+    <div id="landing-screen" class="section active">
+        <div class="content">
+            <h1 id="landing-title" class="animate-text"></h1>
+            <h2 id="landing-subtitle" class="animate-text"></h2>
+            <div id="calibration-log"></div>
+            <button id="btn-continue" class="magic-btn hidden">Continue</button>
+        </div>
+    </div>
+
+    <!-- Main Menu -->
+    <div id="main-menu" class="section">
+        <div class="header">
+            <blockquote id="home-quote" class="animate-text"></blockquote>
+        </div>
+        <div class="menu-grid">
+            <!-- Buttons will be injected here -->
+        </div>
+    </div>
+
+    <!-- Open When Section -->
+    <div id="open-when-section" class="section">
+        <button class="back-btn">← Back</button>
+        <h1>Open When...</h1>
+        <div class="cards-container" id="open-when-cards"></div>
+    </div>
+
+    <!-- Our Future Section -->
+    <div id="our-future-section" class="section">
+        <button class="back-btn">← Back</button>
+        <h1>Our Future</h1>
+        <div class="timeline" id="future-timeline"></div>
+    </div>
+
+    <!-- Daily Prompt Section -->
+    <div id="daily-prompt-section" class="section">
+        <button class="back-btn">← Back</button>
+        <h1>Daily Prompt</h1>
+        <div id="prompt-card" class="card"></div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz-section" class="section">
+        <button class="back-btn">← Back</button>
+        <h1>Signal Alignment</h1>
+        <div id="quiz-progress" class="progress-indicator"></div>
+        <div id="quiz-container"></div>
+    </div>
+
+    <!-- Secret Vault Section -->
+    <div id="secret-vault-section" class="section">
+        <button class="back-btn">← Back</button>
+        <h1>Secret Vault</h1>
+        <div id="vault-letters" class="cards-container"></div>
+    </div>
+
+    <!-- Mood Log Section -->
+    <div id="mood-log-section" class="section">
+        <button class="back-btn">← Back</button>
+        <h1>Mood Log</h1>
+        <div id="mood-timeline" class="horizontal-timeline"></div>
+        <div id="mood-notes"></div>
+    </div>
+
+    <!-- Emergency Calm Elements -->
+    <div id="calm-trigger" class="floating-calm-btn" title="Emergency Calm"></div>
+    <div id="calm-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h1>Emergency Calm</h1>
+            <div id="calm-text"></div>
+            <button id="calm-ok" class="magic-btn">Okay.</button>
+        </div>
+    </div>
+
+    <!-- Main JS -->
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
